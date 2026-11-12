@@ -18,12 +18,12 @@ return new class extends Migration
             $table->decimal('subtotal',12,2);
             $table->timestamps();
 
-            
+
             $table  ->foreign('id_peminjaman')
                     ->references('id_peminjaman')
                     ->on('peminjaman');
             $table  ->foreign('id_alsintan')
-                    ->references('alsintan')
+                    ->references('id_alsintan')
                     ->on('alsintan');
         });
     }
