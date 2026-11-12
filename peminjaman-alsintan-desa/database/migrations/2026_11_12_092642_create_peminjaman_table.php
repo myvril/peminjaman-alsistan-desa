@@ -12,15 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('peminjaman', function (Blueprint $table) {
-            $table  ->smallIncrements('id_peminjaman')
-                    ->unsigned()
-                    ->primary();
-            $table  ->foreign('id_peminjam')
-                    ->references('id_user')
-                    ->on('user');
-            $table  ->foreign('id_pengelola')
-                    ->references('id_user')
-                    ->on('user');
+            $table->smallIncrements('id_peminjaman');
+            $table->unsignedSmallInteger('id_peminjam');
+            $table->unsignedSmallInteger('id_pengelola');
             $table->date('tanggal_pengajuan');
             $table->dateTime('waktu_mulai');
             $table->dateTime('waktu_selesai');
@@ -34,6 +28,13 @@ return new class extends Migration
             $table->decimal('total_biaya',12,2);
             $table->text('catatan_pengelola');
             $table->timestamps();
+
+            $table  ->foreign('id_peminjam')
+                    ->references('id_user')
+                    ->on('user');
+            $table  ->foreign('id_pengelola')
+                    ->references('id_user')
+                    ->on('user');
 
         });
     }

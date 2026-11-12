@@ -12,9 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('alsintan', function (Blueprint $table) {
-            $table  ->smallIncrements('id_alsintan')
-                    ->primary()
-                    ->unsigned();
+            $table->smallIncrements('id_alsintan');
             $table->string('nama_alat', 100);
             $table->enum('jenis', ['traktor', 'combine', 'drone-spray', 'transplante']);
             $table->text('deskripsi');

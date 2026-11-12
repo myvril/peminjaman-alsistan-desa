@@ -12,16 +12,19 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('detail_peminjaman', function (Blueprint $table) {
-            $table  ->smallIncrements('id_detail')
-                    ->unsigned();
+            $table->smallIncrements('id_detail');
+            $table->unsignedSmallInteger('id_peminjaman');
+            $table->unsignedSmallInteger('id_alsintan');
+            $table->decimal('subtotal',12,2);
+            $table->timestamps();
+
+            
             $table  ->foreign('id_peminjaman')
                     ->references('id_peminjaman')
                     ->on('peminjaman');
             $table  ->foreign('id_alsintan')
                     ->references('alsintan')
                     ->on('alsintan');
-            $table->decimal('subtotal',12,2);
-            $table->timestamps();
         });
     }
 
