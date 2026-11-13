@@ -31,10 +31,10 @@ return new class extends Migration
 
             $table  ->foreign('id_peminjam')
                     ->references('id_user')
-                    ->on('user');
+                    ->on('users');
             $table  ->foreign('id_pengelola')
                     ->references('id_user')
-                    ->on('user');
+                    ->on('users');
 
         });
     }
