@@ -115,10 +115,6 @@
                 <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
                 Portal Layanan Digital Warga Desa
             </span>
-            <span class="inline-flex items-center gap-1.5 text-slate-600">
-                <svg class="h-4 w-4 text-forest-800" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14v-2a9 9 0 0 1 18 0v2"/><path d="M21 15a2 2 0 0 1-2 2h-1v-5h1a2 2 0 0 1 2 2zM3 15a2 2 0 0 0 2 2h1v-5H5a2 2 0 0 0-2 2z"/></svg>
-                Posko Alsintan: 0812-4567-890
-            </span>
         </div>
 
         <div class="mx-auto my-auto w-full max-w-[560px] py-10">
