@@ -7,4 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Alsintan extends Model
 {
     //
+    protected $table = 'alsintan';
+    
 }
